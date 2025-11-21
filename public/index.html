@@ -15,17 +15,31 @@
   <body>
     <div class="container">
       <header class="header">
-        <div class="titile">Shoply.</div>
+        <div class="title">Shoply.</div>
         <div class="menu">
           <router-link class="header-link" to="/">Home</router-link>
+          <span class="dash">/</span>
           <router-link class="header-link" to="/login">Products</router-link>
+          <span class="dash">/</span>
           <router-link class="header-link" to="/register">About</router-link>
         </div>
         <div class="actions">
-          <router-link class="login-link" to="/login">Login</router-link>
           <div>
-            <img src="@/src/assets/svgs/Group.svg" alt="" />
+            <svg width="29" height="32" viewBox="0 0 29 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_106_166)">
+<path d="M10.7695 29.3332C11.4303 29.3332 11.966 28.7362 11.966 27.9998C11.966 27.2635 11.4303 26.6665 10.7695 26.6665C10.1086 26.6665 9.57288 27.2635 9.57288 27.9998C9.57288 28.7362 10.1086 29.3332 10.7695 29.3332Z" stroke="#616467" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M23.9316 29.3332C24.5924 29.3332 25.1281 28.7362 25.1281 27.9998C25.1281 27.2635 24.5924 26.6665 23.9316 26.6665C23.2707 26.6665 22.735 27.2635 22.735 27.9998C22.735 28.7362 23.2707 29.3332 23.9316 29.3332Z" stroke="#616467" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1.19653 1.3335H5.98286L9.18969 19.1868C9.29911 19.8007 9.59881 20.3521 10.0363 20.7446C10.4738 21.137 11.0213 21.3455 11.5829 21.3335H23.2136C23.7752 21.3455 24.3226 21.137 24.7601 20.7446C25.1977 20.3521 25.4974 19.8007 25.6068 19.1868L27.5213 8.00016H7.17944" stroke="#616467" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<rect x="0.5" y="0.5" width="27.7179" height="31" stroke="black"/>
+<defs>
+<clipPath id="clip0_106_166">
+<rect width="28.7179" height="32" fill="white"/>
+</clipPath>
+</defs>
+           </svg>
           </div>
+           <router-link class="login-link" to="/login">Login</router-link>
         </div>
       </header>
       <div class="main-login">
@@ -66,27 +80,40 @@
           </svg>
         </div>
         <div class="login-form">
-          <h1>Sign In</h1>
-          <form>
-            <div class="input-group">
-              <label for="email">Email</label>
+          <h1 class="title-form">LOGIN</h1>
+          <form class="form" >
+            <div class="input-wrapper">
               <input
+                
                 type="email"
                 name="email"
                 id="email"
-                placeholder="Enter your email"
               />
+              <span class="icon">
+              <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16.8126 17.6532V15.9719C16.8126 15.0801 16.4584 14.2248 15.8278 13.5942C15.1972 12.9636 14.3419 12.6094 13.4501 12.6094H6.72507C5.83327 12.6094 4.978 12.9636 4.34741 13.5942C3.71681 14.2248 3.36255 15.0801 3.36255 15.9719V17.6532" stroke="#878484" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M10.0876 9.24702C11.9447 9.24702 13.4501 7.74156 13.4501 5.88449C13.4501 4.02742 11.9447 2.52197 10.0876 2.52197C8.23055 2.52197 6.7251 4.02742 6.7251 5.88449C6.7251 7.74156 8.23055 9.24702 10.0876 9.24702Z" stroke="#878484" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</span>
+
             </div>
-            <div class="input-group">
-              <label for="password">Password</label>
+            <div class="input-wrapper">
               <input
                 type="password"
                 name="password"
                 id="password"
-                placeholder="Enter your password"
               />
+             <span class="icon">
+                <svg  width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15.9719 9.24683H4.20311C3.27458 9.24683 2.52185 9.99955 2.52185 10.9281V16.8125C2.52185 17.741 3.27458 18.4938 4.20311 18.4938H15.9719C16.9005 18.4938 17.6532 17.741 17.6532 16.8125V10.9281C17.6532 9.99955 16.9005 9.24683 15.9719 9.24683Z" stroke="#878484" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M5.8844 9.24683V5.8843C5.8844 4.76956 6.32723 3.70047 7.11547 2.91223C7.90372 2.12398 8.97281 1.68115 10.0876 1.68115C11.2023 1.68115 12.2714 2.12398 13.0596 2.91223C13.8479 3.70047 14.2907 4.76956 14.2907 5.8843V9.24683" stroke="#878484" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+             </span>
             </div>
-            <button type="submit">Sign In</button>
+            <p class="forgot">lupa password?</p>
+            <button type="login-btn">MASUK</button>
+            <p class="register-text">
+    belum punya akun? <a href="#">daftar sekarang</a>
+  </p>
         </div>
       </div>
     </div>

@@ -1,26 +1,47 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="container">
+    <HeaderSite @login="showLogin" @register="showRegister" />
+
+    <LoginForm v-if="currentPage === 'login'" />
+    <RegisterForm v-if="currentPage === 'register'" />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HeaderSite from './components/HeaderSite.vue';
+import LoginForm from './components/LoginForm.vue';
+import RegisterForm from './components/RegisterForm.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HeaderSite,
+    LoginForm,
+    RegisterForm
+  },
+  data() {
+    return {
+      currentPage: 'login'
+    }
+  },
+  methods: {
+    showLogin() {
+      this.currentPage = 'login'
+    },
+    showRegister() {
+      this.currentPage = 'register'
+    }
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+.container {
+  width: 1300px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
 }
 </style>

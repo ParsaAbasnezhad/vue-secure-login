@@ -1,0 +1,8 @@
+<svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- بدنه قفل -->
+  <rect x="5" y="9" width="11" height="9" rx="2" stroke="#878484" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- حلقه بالای قفل -->
+  <path d="M7 9V6C7 4.34315 8.34315 3 10 3C11.6569 3 13 4.34315 13 6V9" stroke="#878484" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- دکمه باز/بسته قفل (دایره کوچک) -->
+  <circle cx="10" cy="13.5" r="1" fill="#878484"/>
+</svg>
